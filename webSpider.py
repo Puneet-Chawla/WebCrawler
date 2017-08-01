@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 def trade_spider(max_pages):
     page = 1
     while (page <= max_pages):
-        url="https://thenewboston.com/videos.php?cat=11"
+        url="https://www.google.com/videos.php?cat=11"
         source_code=requests.get(url)
         plain_text=source_code.text
         soup= BeautifulSoup(plain_text,"html5lib")
